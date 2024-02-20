@@ -6,6 +6,7 @@
 	<title>Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="https://kit.fontawesome.com/07aae01dff.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	</head>
 <body>
 	<div class="main_container">
@@ -13,7 +14,8 @@
 		<header>
 			<nav>
 			<div class="logo">
-				<h1>Bipin Khanal</h1>
+				<h1>Bipin Khanal
+                </h1>
 			</div>
 				<ul>
 				<li>
@@ -26,7 +28,7 @@
 					<a href="#service">Services</a>
 				</li>
 				<li>
-					<a href="#form">to contact me</a>
+					<a href="#form">Contact</a>
 				</li>
 				</ul>
 				<label id="bar"><i class="fa-solid fa-bars"></i></label>
@@ -34,7 +36,7 @@
 		</header>
 		<main>
 			<div class="content">
-			<h1>Hi i am Bipin Khanal</h1>
+			<h1>Hi I'm Bipin</h1>
 			<p class="animatep"><span>Web Developer</span></p>
 			<p class="more_bio">Here, You can find about myself.
 			I am a webdeveloper, Ui designer, UX Designer
@@ -44,23 +46,23 @@
 			<h2 id="nextbtn">Let's go</h2>
 			</div>
 			<div class="image">
-				<img src=" c:\Users\Dell\Downloads\bipin.jpg " height="500px" alt="not found">
+				<img src=" c:\live wallpapaer\bipin.png  " height="500px" alt="not found">
 			</div>
 			<div class="icons">
-				<a href="#" class="fa fa-facebook"></a>
-				<a href="#" class="fa fa-twitter"></a>
-				<a href="#" class="fa fa-linkedin"></a>
-				<a href="#" class="fa fa-instagram"></a>
+				<a href="https://www.facebook.com/Pappuadk100?mibextid=ZbWKwL" class="fa fa-facebook"></a>
+				<a href="https://twitter.com/Neverlucky_Paps" class="fa fa-twitter"></a>
+				<a href="https://www.linkedin.com/in/zero-subs-7220922b2" class="fa fa-linkedin"></a>
+				<a href="https://www.instagram.com/pappuadk100/" class="fa fa-instagram"></a>
 			</div>
 		</main>
 	</div>
 
-	<div class="about" id="about">
+	<div class="about" id="about" data-aos="flip-left">
 			<h1>Who I'm</h1>
 			<div class="all_about_container">
 			<div class="ui about_items">
 				<div>
-					<img src="ui.jfif" alt="uinotfound">
+					<img src="  c:\Users\Dell\Downloads\ui(1).jfif   " id="img1" alt="uinotfound">
 				</div>
 				<div>
 					<p>I'm a UI Designer.
@@ -70,7 +72,7 @@
 
 			<div class="webdev about_items">
 				<div>
-					<img src="webdeveloper.jfif" alt="webnotfound">
+					<img src="      c:\Users\Dell\Downloads\webdeveloper(1).jfif         " alt="webnotfound">
 				</div>
 				<div>
 					<p>I'm a Web developer.
@@ -80,8 +82,7 @@
 
 			<div class="appdev about_items">
 				<div>
-
-<img src=" c:\Users\Dell\Downloads\appdevelopment.avif">
+					<img src="  c:\Users\Dell\Downloads\appdeveloper.png  ">
 				</div>
 				<div>
 					<p>I'm a App developer.
@@ -96,7 +97,7 @@
 
 		<div class="main_service" id="service">
 			<h1>Our Services</h1>
-		<div class="services">
+		<div class="services" data-aos="zoom-in">
 			<div class="service_item">
 				<i class="fa-brands fa-servicestack"></i>
 				<h1>Web Development</h1>
@@ -129,11 +130,11 @@
 			<h1>Contact Me</h1>
 			<form>
 				<label>First name:</label>
-				<input type="text" placeholder="Enter your first name" name="name"><br>
+				<input type="text" placeholder="Enter your first name" id="name" value="name" name="name"><br>
 				<label>last name:</label>
 				<input type="text" placeholder="Enter your last name" name="name"><br>
-				<label>email:</label>
-				<input type="text" placeholder="Enter your email" name="name"><br>
+				<label>Email ㅤ :</label>
+				<input type="text" placeholder="Enter your email" id="email" name="name"><br>
 				<input type="radio" value="male"><label>male</label>
 				<input type="radio" radio-button="female"><label>female</label><br>
 				<button type="submit" style="color: black; padding: 0.7rem 2rem 0.7rem 2rem; font-size: 1rem; border-radius: 1rem;">submit</button>
@@ -144,11 +145,19 @@
 			<ul>
 				<li>&copy copyright</li>
 				<li>email: bipinkhanal560@gmail.com</li>
-				<li>follow me on instagram<a href="#" class="fa fa-instagram"></a></li>
-				<li>follow me on facebook<a href="#" class="fa fa-facebook"></a></li>
+				<li>follow me on instagram<a href="https://www.instagram.com/pappuadk100/" class="fa fa-instagram"></a></li>
+				<li>follow me on facebook<a href="https://www.facebook.com/Pappuadk100?mibextid=ZbWKwL" class="fa fa-facebook"></a></li>
 			</ul>
 		</div>
 		</div>
+
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+			AOS.init({
+				offset:300,
+				duration: 1000,
+			});
+		</script>
 
 </body>
 <script src="index.js"></script>
