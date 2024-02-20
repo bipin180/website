@@ -1,4 +1,3 @@
-
 let span=document.getElementsByTagName('span')[0];
 
 function changeContent(){
