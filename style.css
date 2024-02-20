@@ -12,6 +12,16 @@
 
 }
 
+
+li:hover{
+	/* background-color: #19263b; */
+	color: #19263b;
+}
+
+li a:hover{
+	color:#c610c9;
+}
+
 nav{
 	display: flex;
 	width: 100vw;
@@ -74,7 +84,7 @@ main{
 
 .icons{
 	margin-top: 20em;
-	margin-left: 20rem;
+	margin-left: -4rem;
 
 }
 .content p{
@@ -100,9 +110,10 @@ span::after{
 	height: 6rem;
 	width: 30rem;
 	position: absolute;
+	left: 50vw;
 	border-left: 2px solid black;
 	background: #1b1c1c;
-	animation: changecontent 3s 1s infinite ease-in;
+	animation: changecontent 3s 1s steps(10) infinite;
 }
 
 @keyframes changecontent{
@@ -116,6 +127,7 @@ span::after{
 }
 
 #btn{
+	cursor: pointer;
 	padding: 1rem 2rem 1rem 2rem;
 	color: black;
 	font-weight: bold;
@@ -125,14 +137,24 @@ span::after{
 	margin-top: 1.3rem;
 }
 
+#btn:hover{
+	background-color: #1b90e3;
+}
+
+
 
 #nextbtn{
+	cursor: pointer;
 	border: 3px solid black;
 	padding: 0.6rem 2rem 1rem 2rem;
 	display: inline;
 	margin-top: 1.5rem;
 	margin-left: 3rem;
 	width: 5vw;
+}
+
+#nextbtn:hover{
+	background-color: #63218a;
 }
 
 .all_about_container{
@@ -160,6 +182,23 @@ span::after{
 	font-size: 3.5rem;
 	margin-top: 2rem;
 }
+
+.about:hover{
+	animation: changeopt 2s 0.2s infinite ease-in;
+}
+
+@keyframes changeopt{
+	0%{
+		opacity: 0.1;
+	}25%{
+		opacity: 0.5;
+	}50%{
+		opacity: 0.75;
+	}100%{
+		opacity: 1;
+	}
+}
+
 
 .main_service{
 	margin-top: 10rem;
@@ -218,7 +257,7 @@ form label,span{
 }
 
 .form{
-	margin-left: 35rem;
+	margin-left: 15rem;
 	margin-top: 5rem;
 }
 
@@ -235,6 +274,16 @@ form input{
 	padding: 1rem 3rem 1rem 3rem;
 	border-radius: 1rem;
 	margin-top: 1rem;
+	margin-left: 1rem;
+	background-color: #63218a;
+}
+
+form #name{
+	margin-left: 0.5rem;
+}
+
+form #email{
+	margin-left: 1rem;
 }
 
 form label{
@@ -344,6 +393,7 @@ p span{
 	height: 27vh;
 	overflow: hidden;
 }
+
 
 .service_item p{
 	white-space: pre-line;
